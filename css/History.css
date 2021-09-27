@@ -35,12 +35,11 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
-
-
 body{
     background-color:rgb(189, 201, 218);
     overflow: hidden;
 }
+
 nav{
     width: 100vw; /*size*/
     height: 3.5vh;
@@ -81,6 +80,13 @@ ul li {
     margin-left: 20px;
     line-height: 25px;
 }
+
 .collapse{
     text-decoration: underline;
 }
+
+a {
+    color: seashell !important;
+    text-decoration:none;
+  }
+

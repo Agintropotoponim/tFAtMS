@@ -35,13 +35,11 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
-
-
-
 body{
     background-color:rgb(189, 201, 218);
     width: 100vw;
 }
+
 nav{
     width: 100vw; /*size*/
     height: 3.5vh;
@@ -59,7 +57,7 @@ nav{
     color: silver
 }
 
-ul{
+ul {
     width: 55vw;
     height: 5vh;
     text-align: center;
@@ -90,8 +88,6 @@ main {
     border-radius: 20px;
 }
 
-
-
 img {
     width: 90%;
     height: 90%;
@@ -106,4 +102,11 @@ img {
   font-weight: 500;
   letter-spacing: 1px
 }
+
+a {
+    color: seashell !important;
+    text-decoration:none;
+  }
+
+
 
