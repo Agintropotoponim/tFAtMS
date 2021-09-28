@@ -57,14 +57,14 @@ nav{
     color: silver
 }
 
-ul{
+ul.nav{
     width: 55vw;
     height: 5vh;
     text-align: center;
     margin-left: 35vw;
 }
 
-ul li {
+ul.nav li {
     display: inline-block;
     cursor: pointer;
     font-size: 25px;
@@ -85,9 +85,26 @@ ul li {
     margin-left: 31px;
     margin-top: 10px;
     border: 1px solid black;
+    border-radius: 20px;
 }
 
 a {
     color: seashell !important;
     text-decoration:none;
   }
+
+  a.generals {
+    color: blue !important;
+    text-decoration:none;
+  }
+
+.thegreatestgenerals{
+    margin-left: px;
+    box-shadow: 5px 5px 10px 5px black;
+    border: 3px solid rgb(65, 63, 63);
+    width: 210px;
+    padding: 5px 10px;
+    margin-left: 83%;
+    margin-top: -35%;
+    font-size: 20px;
+}

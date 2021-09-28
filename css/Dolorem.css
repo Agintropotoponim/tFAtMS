@@ -36,7 +36,8 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 body{
-    background-color:rgb(189, 201, 218);
+    background: url("../img/army.png") 0 0/cover no-repeat;
+    overflow: hidden; 
 }
 
 nav{
@@ -56,14 +57,14 @@ nav{
     color: silver
 }
 
-ul{
+ul.nav{
     width: 55vw;
     height: 5vh;
     text-align: center;
     margin-left: 35vw;
 }
 
-ul li {
+ul.nav li {
     display: inline-block;
     cursor: pointer;
     font-size: 25px;

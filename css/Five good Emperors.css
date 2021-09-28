@@ -57,14 +57,14 @@ nav{
     color: silver
 }
 
-ul {
+ul.nav {
     width: 55vw;
     height: 5vh;
     text-align: center;
     margin-left: 35vw;
 }
 
-ul li {
+ul.nav li {
     display: inline-block;
     cursor: pointer;
     font-size: 25px;
