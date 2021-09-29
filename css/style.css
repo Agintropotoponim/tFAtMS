@@ -73,6 +73,31 @@ ul.nav li {
     color: seashell;
 }
 
+a:visited{
+    color: seashell;
+}
+
+.logolink:hover{
+    text-decoration: underline;
+    color: black;
+    transition: 0.5s;
+}
+
+
+.link:hover{
+    text-decoration: underline;
+    color: black;
+    transition: 0.5s;
+}
+
+.logolink:active{
+    color:silver;
+}
+
+.link:active{
+    color:silver;
+}
+
 .mainpage{
     font-size: 50px;
     margin-left: 20px;
@@ -87,11 +112,6 @@ ul.nav li {
     border: 1px solid black;
     border-radius: 20px;
 }
-
-a {
-    color: seashell !important;
-    text-decoration:none;
-  }
 
   a.generals {
     color: blue !important;

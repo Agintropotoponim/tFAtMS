@@ -73,6 +73,30 @@ ul.nav li {
     color: seashell;
 }
 
+a:visited{
+    color: seashell;
+}
+
+.logolink:hover{
+    text-decoration: underline;
+    color: black;
+    transition: 0.5s;
+}
+
+.link:hover{
+    text-decoration: underline;
+    color: black;
+    transition: 0.5s;
+}
+
+.logolink:active{
+    color:silver;
+}
+
+.link:active{
+    color:silver;
+}
+
 main {
     display: grid; /*generates a container on the lvl of our block*/
     grid-template-columns: 1fr 1fr 1fr; /*divides a page on N columns*/
@@ -103,10 +127,6 @@ img {
   letter-spacing: 1px
 }
 
-a {
-    color: seashell !important;
-    text-decoration:none;
-  }
 
 
 
