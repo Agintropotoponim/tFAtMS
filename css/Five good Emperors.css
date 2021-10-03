@@ -1,15 +1,22 @@
+@font-face {
+	font-family: 'augustus';
+	src: url('../fonts/augustus.eot');
+	src: local('☺'), url('../fonts/augustus.woff') format('woff'), url('../fonts/augustus.ttf') format('truetype'), url('../fonts/augustus.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 img {
     width: 70%;
     border-radius: 55px;
-    margin-top: 10px;
-    margin-left: 65px;
-    border: 1px solid black;
+    margin-top: 20px;
+    border: 1px solid black; 
 }
 
 .image__text{
+  font-family: 'augustus';
   text-align: center;
   font-size: xx-large;
-  font-weight: 550;
   letter-spacing: 1.5px;
   margin: 10px;
 }
@@ -18,7 +25,16 @@ img {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap; 
+    justify-content: space-around;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
+.block__column{
+  max-width: 600px;
+  min-height: 760px;
+}
 
-
+.align__center{
+  text-align: center;
+}

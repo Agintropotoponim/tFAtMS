@@ -1,3 +1,11 @@
+@font-face {
+	font-family: 'augustus';
+	src: url('../fonts/augustus.eot');
+	src: local('☺'), url('../fonts/augustus.woff') format('woff'), url('../fonts/augustus.ttf') format('truetype'), url('../fonts/augustus.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 .main-page{
     font-size: 50px;
     margin-left: 20px;
@@ -11,6 +19,7 @@
     margin-top: 10px;
     border: 1px solid black;
     border-radius: 20px;
+    display: inline-block;
 }
 
 a.generals {
@@ -22,15 +31,15 @@ a.generals {
     margin-left: px;
     box-shadow: 5px 5px 10px 5px black;
     border: 3px solid rgb(65, 63, 63);
-    width: 290px;
+    width: 300px;
     padding: 5px 10px;
-    margin-left: 70%;
-    margin-top: -20%;
     font-size: 20px;
     list-style-type: none; /*destroys the dots */
     display: flexbox;
     justify-content: space-around;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;   
+    margin-left: 30px; 
+    margin-top: 100px;
 
 }
 
@@ -69,4 +78,15 @@ a.generals {
 
 .actually{
     font-size: 50px;
+}
+
+.block {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+
+.block__column{
+    min-width: 500px;
+    max-width: 1000px;
 }
