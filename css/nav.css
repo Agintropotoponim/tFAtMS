@@ -21,11 +21,16 @@ body{
 nav{
     width: 100%; /*size*/
     height: 8vh;
-    margin-top: 4vh;
     background-color: #7f7679;
     display: flex; /* two containers can't be on the same position 
     in nav-container. it divides nav in half*/
     border: 1px solid black;
+}
+
+.div__nav{
+    display: flex;
+    margin-right: px;
+    margin-left: 230px;
 }
 
 .logo{
@@ -40,8 +45,10 @@ nav{
 
 ul.nav{
     width: 100%;
+    color: silver;
     text-align: center;
-    margin-left: 35vw;
+    margin-left: 17.5vw;
+    padding-right: 300px;
     display: inline-flex;
     justify-content: space-between;
     white-space: nowrap left;
@@ -67,7 +74,11 @@ a:visited{
 .logo__link:hover{
     text-decoration: underline;
     color: black;
-    transition: 0.5s;
+    transition: 0.35s;
+}
+
+.logo__link{
+    color:silver
 }
 
 .link:hover{
@@ -82,4 +93,8 @@ a:visited{
 
 .link:active{
     color:silver;
+}
+
+.link{
+    color: seashell;
 }

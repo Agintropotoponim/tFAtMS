@@ -6,15 +6,30 @@
 	font-style: normal;
 }
 
-.main-page{
-    font-size: 50px;
-    margin-left: 20px;
-    margin-top: 30px;
+.block{
+    margin-right: 140px;
+    margin-left: 190px;
 }
 
-.roman__image{
-    max-width:900px;
-    max-height:700px;
+.dolorem{
+    font-size: 30px;
+    margin-right: 250px;
+    margin-left: 250px;
+}
+
+.actually{
+    margin-right: 55px;
+    margin-left: 55px; 
+}
+
+.main-page{
+    font-size: 50px;
+    margin-left: 100px;
+}
+
+.roman__image{   
+    width: 975px;
+    height:700px;
     margin-left: 31px;
     margin-top: 10px;
     border: 1px solid black;
@@ -23,7 +38,7 @@
 }
 
 a.generals {
-    color: blue;
+    color: #9b2d30;
     text-decoration:none;
   }
 
@@ -44,7 +59,7 @@ a.generals {
 }
 
 .the-greatest-generals li::before{
-    content: "";
+    content: '';
     width: 7px;
     height: 7px;
     border-radius: 50%;
@@ -61,8 +76,8 @@ a.generals {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 235px;
+    margin-right: 360px;
     line-height: 25px;
     box-shadow: 5px 5px 10px 5px black;
     padding: 10px;
@@ -70,10 +85,6 @@ a.generals {
 
 .collapse{
     text-decoration: underline;
-}
-
-.dolorem{
-    font-size: 30px;
 }
 
 .actually{
@@ -86,7 +97,30 @@ a.generals {
     justify-content: space-around;
 }
 
+.block__item{
+    width: 1150px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
 .block__column{
     min-width: 500px;
     max-width: 1000px;
 }
+
+.button__left{
+    margin-top:300px;
+    border-radius: 55px;
+    height:50px;
+    width: 60px;
+    display: inline;
+}
+
+.button__right{
+    margin-top:300px;
+    border-radius: 55px;
+    height:50px;
+    width: 60px;
+    display: inline;
+}
+
