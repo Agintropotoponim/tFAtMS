@@ -13,8 +13,8 @@
 
 .dolorem{
     font-size: 30px;
-    margin-right: 250px;
-    margin-left: 250px;
+    margin-right: 350px;
+    margin-left: 350px;
 }
 
 .actually{
@@ -76,8 +76,8 @@ a.generals {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 15px;
-    margin-left: 235px;
-    margin-right: 360px;
+    margin-left: 330px;
+    margin-right: 370px;
     line-height: 25px;
     box-shadow: 5px 5px 10px 5px black;
     padding: 10px;
@@ -114,6 +114,7 @@ a.generals {
     height:50px;
     width: 60px;
     display: inline;
+    box-shadow: 0 1px 1px 0  black, 0 2px 5px 0  black;
 }
 
 .button__right{
@@ -122,5 +123,7 @@ a.generals {
     height:50px;
     width: 60px;
     display: inline;
+    box-shadow: 0 1px 1px 0  black, 0 2px 5px 0  black;
 }
+
 

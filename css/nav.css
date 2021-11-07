@@ -73,7 +73,7 @@ a:visited{
 
 .logo__link:hover{
     text-decoration: underline;
-    color: black;
+    color: #9b2d30;
     transition: 0.35s;
 }
 
@@ -83,7 +83,7 @@ a:visited{
 
 .link:hover{
     text-decoration: underline;
-    color: black;
+    color: #9b2d30;
     transition: 0.5s;
 }
 
