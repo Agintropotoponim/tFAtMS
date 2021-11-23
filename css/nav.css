@@ -1,100 +1,202 @@
 @font-face {
-	font-family: 'augustus';
-	src: url('../fonts/augustus/augustus.eot');
-	src: local('☺'), url('../fonts/augustus/augustus.woff') format('woff'), url('../fonts/augustus/augustus.ttf') format('truetype'), url('../fonts/augustus/augustus.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: "augustus";
+    src: url("../fonts/augustus/augustus.eot");
+    src: local("☺"), url("../fonts/augustus/augustus.woff") format("woff"),
+        url("../fonts/augustus/augustus.ttf") format("truetype"), url("../fonts/augustus/augustus.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Charle';
-	src: url('../fonts/charle/CharlemagneStd-Bold.eot');
-	src: local('☺'), url('../fonts/charle/CharlemagneStd-Bold.woff') format('woff'), url('../fonts/charle/CharlemagneStd-Bold.ttf') format('truetype'), url('../fonts/charle/CharlemagneStd-Bold.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: "Charle";
+    src: url("../fonts/charle/CharlemagneStd-Bold.eot");
+    src: local("☺"), url("../fonts/charle/CharlemagneStd-Bold.woff") format("woff"),
+        url("../fonts/charle/CharlemagneStd-Bold.ttf") format("truetype"),
+        url("../fonts/charle/CharlemagneStd-Bold.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
-body{
-    background-color:rgb(189, 201, 218);
+
+body {
+    background-color: rgb(189, 201, 218);
 }
 
-nav{
-    width: 100%; /*size*/
+.content {
+    max-width: 1660px;
+    margin: 0px auto;
+}
+
+nav {
+    display: flex; /* two containers can't be on the same position in nav-container. it divides nav*/
     height: 8vh;
     background-color: #7f7679;
-    display: flex; /* two containers can't be on the same position 
-    in nav-container. it divides nav in half*/
     border: 1px solid black;
+    width: 100%;
 }
 
-.div__nav{
+.div__nav {
     display: flex;
-    margin-right: px;
-    margin-left: 230px;
+    margin: 0px auto;
+    max-width: 1660px;
 }
 
-.logo{
+.logo {
+    display: flex;
     font-size: 30px;
     cursor: pointer;
-    width: 5vw;
-    margin-left: 5vw;
+    min-width: 105px;
     color: silver;
-    margin-top: 17px;
-    font-family: 'Charle';
+    font-family: "Charle";
+    justify-content: center;
+    align-items: center;
 }
 
-ul.nav{
-    width: 100%;
+ul.nav {
     color: silver;
-    text-align: center;
-    margin-left: 17.5vw;
-    padding-right: 300px;
-    display: inline-flex;
-    justify-content: space-between;
+    padding-left: 300px;
+    display: flex;
+    align-items: center;
     white-space: nowrap left;
+    margin: 0px auto;
 }
 
 ul.nav li {
-    display: inline-flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
     cursor: pointer;
     font-size: 26.5px;
     margin-left: 2vw;
     margin-right: 2vw;
-    margin-top: 17px;
     color: seashell;
-    font-family: 'augustus';
+    font-family: "augustus";
 }
 
-a:visited{
+a:visited {
     color: seashell;
 }
 
-.logo__link:hover{
+.logo__link:hover {
     text-decoration: underline;
     color: #9b2d30;
     transition: 0.35s;
 }
 
-.logo__link{
-    color:silver
+.logo__link {
+    color: silver;
 }
 
-.link:hover{
+.link:hover {
     text-decoration: underline;
     color: #9b2d30;
-    transition: 0.5s;
+    transition: 0.25s;
 }
 
-.logo__link:active{
-    color:silver;
+.logo__link:active {
+    color: silver;
 }
 
-.link:active{
-    color:silver;
+.link:active {
+    color: silver;
 }
 
-.link{
+.link {
     color: seashell;
+}
+
+.menu__icon{
+    display: none;
+}
+
+
+@media (max-width: 1660px){
+    .content{
+        max-width: 970px;
+    }
+    .div__nav{
+        max-width: 970px;;
+    }
+    ul.nav{
+        padding-left: 0px;
+    }
+    .roman__image{
+        width: 100%;
+        object-fit: cover; 
+    }
+}
+
+@media (max-width: 992px){
+    .content{
+        max-width: 750px;
+    }
+    .div__nav{
+        max-width: 750px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    ul.nav{
+        padding-left: 0px;
+        overflow: hidden;
+        display: none;
+    }
+    .roman__image{
+        width: 100%;
+        object-fit: cover; 
+    }
+    .menu__icon{
+        display: flex;
+        flex-wrap: nowrap;
+        position: relative;
+        width: 40px;
+        height: 30px;
+        cursor: pointer;
+        border: 2px solid black;
+        margin: auto 23px;
+        min-width: 40px;
+    }
+    .menu__icon span,
+    .menu__icon::before,
+    .menu__icon::after{
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: seashell;
+    }
+    .menu__icon::before,
+    .menu__icon::after{
+        content: '';
+    }
+    .menu__icon::before{
+        top: 0;
+    }
+    .menu__icon::after{
+        bottom: 0;
+    }
+    .menu__icon span{
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+}
+
+@media (max-width: 767px){
+    .content{
+        max-width: none;
+    }
+    .div__nav{
+        min-width: none;
+        max-width: none;
+        overflow: hidden;
+    }
+    .logo{
+        margin-left: 5px;
+    }
+    ul.nav{
+        max-width: none;
+        display: none;
+    }
+    .roman__image{
+        width: 100%;
+        object-fit: cover; 
+    }
 }

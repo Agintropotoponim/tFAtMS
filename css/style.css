@@ -6,15 +6,8 @@
 	font-style: normal;
 }
 
-.block{
-    margin-right: 140px;
-    margin-left: 190px;
-}
-
 .dolorem{
     font-size: 30px;
-    margin-right: 350px;
-    margin-left: 350px;
 }
 
 .actually{
@@ -24,17 +17,19 @@
 
 .main-page{
     font-size: 50px;
-    margin-left: 100px;
 }
 
+.div__image{
+    position: relative;
+}
 .roman__image{   
-    width: 975px;
-    height:700px;
-    margin-left: 31px;
+    display: inline-block;
+    max-width: 975px;
+    height: 700px;
     margin-top: 10px;
     border: 1px solid black;
     border-radius: 20px;
-    display: inline-block;
+    object-fit: cover;
 }
 
 a.generals {
@@ -43,17 +38,14 @@ a.generals {
   }
 
 .the-greatest-generals{
-    margin-left: px;
     box-shadow: 5px 5px 10px 5px black;
     border: 3px solid rgb(65, 63, 63);
-    width: 300px;
+    max-width: 300px;
     padding: 5px 10px;
     font-size: 20px;
     list-style-type: none; /*destroys the dots */
-    display: flexbox;
     justify-content: space-around;
     flex-wrap: wrap;   
-    margin-left: 30px; 
     margin-top: 100px;
 
 }
@@ -76,8 +68,6 @@ a.generals {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 15px;
-    margin-left: 330px;
-    margin-right: 370px;
     line-height: 25px;
     box-shadow: 5px 5px 10px 5px black;
     padding: 10px;
@@ -93,37 +83,33 @@ a.generals {
 
 .block {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .block__item{
-    width: 1150px;
     margin-top: 20px;
-    padding-left: 10px;
+    padding: 0px 10px 0px 10px;
 }
 
 .block__column{
-    min-width: 500px;
-    max-width: 1000px;
 }
 
 .button__left{
+    display: none;
     margin-top:300px;
     border-radius: 55px;
     height:50px;
-    width: 60px;
-    display: inline;
+    width: 50px;
     box-shadow: 0 1px 1px 0  black, 0 2px 5px 0  black;
 }
 
 .button__right{
+    display: none;
     margin-top:300px;
     border-radius: 55px;
     height:50px;
-    width: 60px;
-    display: inline;
+    width: 50px;
     box-shadow: 0 1px 1px 0  black, 0 2px 5px 0  black;
 }
-
 

@@ -6,6 +6,11 @@
 	font-style: normal;
 }
 
+.content{
+  max-width: 1660px;
+  margin: 0px auto;
+}
+
 img {
     width: 70%;
     border-radius: 55px;
@@ -33,14 +38,13 @@ img {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap; 
-    justify-content: space-around;
-    margin-left: 30px;
-    margin-right: 30px;
+    justify-content: space-between;
 }
 
 .block__column{
   max-width: 600px;
   min-height: 760px;
+  margin: 0px auto;
 }
 
 .align__center{
@@ -50,16 +54,12 @@ img {
 .info__block{
 font-size: 20px;
 font-family: Arial, Helvetica, sans-serif;
-margin-top: 15px;
-margin-left: 150px;
-margin-right: 150px;
+margin: 0px auto;
 line-height: 25px;
 box-shadow: 5px 5px 30px 5px black;
 padding: 10px;
 display: none;
-width: 700px;
 margin-top: 100px;
-min-width: 2000px;
 line-height: 30px;
 }
 

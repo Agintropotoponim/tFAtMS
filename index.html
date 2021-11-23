@@ -3,42 +3,51 @@
 <head>
     <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='viewport' content='width=device-width'>
     <link rel='stylesheet' href='css/style reset.css'>
     <link rel='stylesheet' href='css/nav.css'>
     <link rel='stylesheet' href='css/style.css'>
     <title>Rome</title>
 </head>
 <body>
-    <nav>
-        <div class='div__nav'>
-            <div class='logo'><a class='logo__link' href='index.html'>Rome</a></div>
-            <ul class='nav'>
-                <li><a class='link' href='Dolorem.html'>Dolorem</a></li>
-                <li><a class='link' href='History.html'>History</a></li>
-                <li><a class='link' target='_blank' href='https://www.youtube.com/c/Dovahhatty'>Unbiased History</a></li>
-                <li><a class='link' href='Five good Emperors.html'>Five good Emperors</a></li>
-            </ul>
+    <header>
+        <nav>
+            <div class='div__nav'>
+                <div class='logo'><a class='logo__link' href='index.html'>Rome</a></div>
+                <ul class='nav'>
+                    <li><a class='link' href='Dolorem.html'>Dolorem</a></li>
+                    <li><a class='link' href='History.html'>History</a></li>
+                    <li><a class='link' target='_blank' href='https://www.youtube.com/c/Dovahhatty'>Unbiased History</a></li>
+                    <li><a class='link' href='Five good Emperors.html'>Five good Emperors</a></li>
+                </ul>
+                <div class='menu__icon'>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class='content'>
+        <div class='block'>
+                <div class='block__column'>
+                    <div class='block__item'>
+                        <p class='main-page'>There once was a dream... a dream called Rome.</p>
+                        <button class='button__left' onclick='prev()'> Prev </button>
+                        <div class='div__image'>
+                            <img id='slider' class='roman__image' src='img/photo4.jpg' alt='Roman Empire'>
+                        </div>
+                        <button class='button__right' onclick='next()'> Next </button>
+                    </div>
+                </div>
+                <div class='block__column'>
+                    <div class='the-greatest-generals'>
+                        <ul>The greatest generals:</ul>
+                            <li><a target='_blank' class='generals' href='https://en.wikipedia.org/wiki/Belisarius'>Flavius Belisarius</a></li>
+                            <li><a target='_blank' class='generals' href='https://en.wikipedia.org/wiki/Flavius_Aetius' >Flavius Aetius</a></li>
+                            <li><a target='_blank' class='generals' href='https://en.wikipedia.org/wiki/Aegidius'>Aegidius Afranius Syagrius</a></li>
+                            <li><a target='_blank' class='generals' href='https://en.wikipedia.org/wiki/Stilicho'>Flavius Stilicho</a></li>
+                    </div>
+                </div>
         </div>
-    </nav>
-    <div class='block'>
-            <div class='block__column'>
-                <div class='block__item'>
-                    <p class='main-page'>There once was a dream... a dream called Rome.</p>
-                    <button class='button__left' onclick='prev()'> Prev </button>
-                    <img id='slider' class='roman__image' src='img/photo4.jpg' alt='Roman Empire'>
-                    <button class='button__right' onclick='next()'> Next </button>
-                </div>
-            </div>
-            <div class='block__column'>
-                <div class='the-greatest-generals'>
-                    <ul>The greatest generals:</ul>
-                        <li><a target='_blank' class='generals' href='https://en.wikipedia.org/wiki/Belisarius'>Flavius Belisarius</a></li>
-                        <li><a target='_blank' class='generals' href='https://en.wikipedia.org/wiki/Flavius_Aetius' >Flavius Aetius</a></li>
-                        <li><a target='_blank' class='generals' href='https://en.wikipedia.org/wiki/Aegidius'>Aegidius Afranius Syagrius</a></li>
-                        <li><a target='_blank' class='generals' href='https://en.wikipedia.org/wiki/Stilicho'>Flavius Stilicho</a></li>
-                </div>
-            </div>
     </div>
     <script src=js/main.js></script> 
 </body>
