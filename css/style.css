@@ -95,21 +95,16 @@ a.generals {
 .block__column{
 }
 
-.button__left{
-    display: none;
-    margin-top:300px;
-    border-radius: 55px;
-    height:50px;
-    width: 50px;
-    box-shadow: 0 1px 1px 0  black, 0 2px 5px 0  black;
+.slider__block{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+    max-width: 120px;
+    margin: auto;
 }
-
-.button__right{
-    display: none;
-    margin-top:300px;
-    border-radius: 55px;
-    height:50px;
-    width: 50px;
-    box-shadow: 0 1px 1px 0  black, 0 2px 5px 0  black;
+.slider__point{
+    background-color: #36393E;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
 }
-

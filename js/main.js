@@ -5,8 +5,11 @@ let images = [
     '../img/photo2.jpg',
     '../img/photo3.jpg'
 ];
+
+const sliderPoint = document.querySelectorAll('.slider__point')
 let num = 0;
-const next = () => {
+sliderPoint[0].style.background = '#9b2d30'
+const slideShow = () => {
     let slider = document.getElementById('slider');
     num++;
     if(num >= images.length) {
@@ -14,14 +17,59 @@ const next = () => {
     }
     slider.className='roman__image'
     slider.src = images[num];
-}
-const prev = () => {
-    let slider = document.getElementById('slider');
-    num--;
-    if(num < 0) {
-        num = images.length-1;
+    for (let i=0; i<sliderPoint.length;i++){
+        sliderPoint[i].style.background = '#36393E'
     }
-    slider.src = images[num];
+    sliderPoint[num].style.background = '#9b2d30'
 }
 
-setInterval(next,7500)
+
+setInterval(slideShow, 7500);
+
+sliderPoint[0].onclick = () =>{
+    for (let i=0; i<sliderPoint.length;i++){
+        sliderPoint[i].style.background = '#36393E';
+    }
+    sliderPoint[0].style.background = '#9b2d30';
+    let slider = document.getElementById('slider');
+    slider.src = images[0];
+    num=0;
+}
+sliderPoint[1].onclick = () =>{
+    for (let i=0; i<sliderPoint.length;i++){
+        sliderPoint[i].style.background = '#36393E';
+    }
+    sliderPoint[1].style.background = '#9b2d30';
+    let slider = document.getElementById('slider');
+    slider.src = images[1];
+    num=1;    
+}
+sliderPoint[2].onclick = () =>{
+    for (let i=0; i<sliderPoint.length;i++){
+        sliderPoint[i].style.background = '#36393E';
+    }
+    sliderPoint[2].style.background = '#9b2d30';
+    let slider = document.getElementById('slider');
+    slider.src = images[2];
+    num=2; 
+}
+sliderPoint[3].onclick = () =>{
+    for (let i=0; i<sliderPoint.length;i++){
+        sliderPoint[i].style.background = '#36393E';
+    }
+    sliderPoint[3].style.background = '#9b2d30';
+    let slider = document.getElementById('slider');
+    slider.src = images[3]; 
+    num=3;    
+}
+sliderPoint[4].onclick = () =>{
+    for (let i=0; i<sliderPoint.length;i++){
+        sliderPoint[i].style.background = '#36393E';
+    }
+    sliderPoint[4].style.background = '#9b2d30';
+    let slider = document.getElementById('slider');
+    slider.src = images[4];
+    num=4;     
+}
+
+
