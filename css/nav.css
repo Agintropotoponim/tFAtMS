@@ -112,10 +112,10 @@ a:visited {
         max-width: 970px;
     }
     .div__nav{
-        max-width: 970px;;
+        max-width: 970px;
     }
     ul.nav{
-        padding-left: 0px;
+        padding-left: 50px;
     }
     .roman__image{
         width: 100%;

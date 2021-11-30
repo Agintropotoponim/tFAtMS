@@ -1,100 +1,35 @@
-const text1 = document.querySelector('#nerva').innerText
-const text2 = document.querySelector('#traianus').innerText
-const text3 = document.querySelector('#hadrian').innerText
-const text4 = document.querySelector('#pius').innerText
-const text5 = document.querySelector('#aurelius').innerText
+const text1 = document.querySelector('#nerva').innerText;
+const text2 = document.querySelector('#traianus').innerText;
+const text3 = document.querySelector('#hadrian').innerText;
+const text4 = document.querySelector('#pius').innerText;
+const text5 = document.querySelector('#aurelius').innerText;
+const emperors = document.querySelectorAll('#Emperor');
 
 function scrollToElement() {
-    element = document.getElementById("temp")
+    element = document.getElementById("temp");
     element.scrollIntoView(true);
     }
 
-document.querySelector('#firstSpan').onclick = (text) =>{
-    const temp = document.querySelector('#temp')
-    temp.className ='info__block'
+function showHistoryBlock(n){
+    for (let i=0; i<emperors.length;i++){
+        if (n===emperors[i]) n=i;
+    }
+        if (n<2) b=text1;
+        else if (n<4) b=text2;
+        else if (n<6) b=text3;
+        else if (n<8) b=text4;
+        else b=text5;
+    const temp = document.querySelector('#temp');
+    temp.className ='info__block';
     if (temp.style.display === 'none'){
-        temp.style.display = 'block'
-        temp.innerText = text1
-        scrollToElement()  
+        temp.style.display = 'block';
+        temp.innerText = b;
+        scrollToElement();  
     } else{ temp.style.display = 'none'}
-}
-document.querySelector('#firstPhoto').onclick = (text) =>{
-    const temp = document.querySelector('#temp')
-    if (temp.style.display === 'none'){
-        temp.style.display = 'block'
-        temp.innerText = text1
-        scrollToElement()  
-    } else{ temp.style.display = 'none'}  
 }
 
-document.querySelector('#secondSpan').onclick = (text) =>{
-    const temp = document.querySelector('#temp')
-    temp.className ='info__block'
-    if (temp.style.display === 'none'){
-        temp.style.display = 'block'
-        temp.innerText = text2
-        scrollToElement()  
-    } else{ temp.style.display = 'none'}
-}
-document.querySelector('#secondPhoto').onclick = (text) =>{
-    const temp = document.querySelector('#temp')
-    if (temp.style.display === 'none'){
-        temp.style.display = 'block'
-        temp.innerText = text2
-        scrollToElement()  
-    } else{ temp.style.display = 'none'}  
-}
+emperors.forEach((elem)=>{
+    elem.addEventListener('click',()=>{
+        return showHistoryBlock(elem)});
+    })
 
-document.querySelector('#thirdSpan').onclick = (text) =>{
-    const temp = document.querySelector('#temp')
-    temp.className ='info__block'
-    if (temp.style.display === 'none'){
-        temp.style.display = 'block'
-        temp.innerText = text3
-        scrollToElement()  
-    } else{ temp.style.display = 'none'}
-}
-document.querySelector('#thirdPhoto').onclick = (text) =>{
-    const temp = document.querySelector('#temp')
-    if (temp.style.display === 'none'){
-        temp.style.display = 'block'
-        temp.innerText = text3
-        scrollToElement()  
-    } else{ temp.style.display = 'none'} 
-}
-
-document.querySelector('#fourthSpan').onclick = (text) =>{
-    const temp = document.querySelector('#temp')
-    temp.className ='info__block'
-    if (temp.style.display === 'none'){
-        temp.style.display = 'block'
-        temp.innerText = text4
-        scrollToElement()  
-    } else{ temp.style.display = 'none'}
-}
-document.querySelector('#fourthPhoto').onclick = (text) =>{
-    const temp = document.querySelector('#temp')
-    if (temp.style.display === 'none'){
-        temp.style.display = 'block'
-        temp.innerText = text4
-        scrollToElement()  
-    } else{ temp.style.display = 'none'} 
-}
-
-document.querySelector('#fifthSpan').onclick = (text) =>{
-    const temp = document.querySelector('#temp')
-    temp.className ='info__block'
-    if (temp.style.display === 'none'){
-        temp.style.display = 'block'
-        temp.innerText = text5
-        scrollToElement()  
-    } else{ temp.style.display = 'none'}
-}
-document.querySelector('#fifthPhoto').onclick = (text) =>{
-    const temp = document.querySelector('#temp')
-    if (temp.style.display === 'none'){
-        temp.style.display = 'block'
-        temp.innerText = text5
-        scrollToElement()  
-    } else{ temp.style.display = 'none'} 
-}
