@@ -1,0 +1,28 @@
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+}
+
+.modal__content{
+    padding: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+    background: white;
+}
+
+.modal.active{
+    transform: scale(1);
+}
+
+.button__flex{
+    margin-left: 85%;
+    margin-bottom: 10px;
+}

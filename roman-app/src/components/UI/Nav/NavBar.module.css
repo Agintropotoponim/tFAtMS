@@ -1,0 +1,85 @@
+/*---------nav-------------------*/
+
+
+
+nav {
+    display: flex; /* two containers can't be on the same position in nav-container. it divides nav*/
+    height: 8vh;
+    background-color: #7f7679;
+    border: 1px solid black;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.div__nav {
+    display: flex;
+    margin: 0px auto;
+    max-width: 1660px;
+}
+
+.logo {
+    display: flex;
+    font-size: 30px;
+    cursor: pointer;
+    min-width: 105px;
+    color: silver;
+    font-family: "Charle";
+    
+}
+
+ul.nav {
+    color: silver;
+    padding-left: 300px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap left;
+    margin: 0px auto;
+}
+
+ul.nav li {
+    cursor: pointer;
+    font-size: 26.5px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    color: seashell;
+    font-family: "augustus";
+}
+
+a:visited {
+    color: seashell;
+}
+
+.logo__link:hover {
+    text-decoration: underline;
+    color: #9b2d30;
+    transition: 0.35s;
+}
+
+.logo__link {
+    color: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #9b2d30;
+    transition: 0.25s;
+}
+
+.logo__link:active {
+    color: silver;
+}
+
+.link:active {
+    color: silver;
+}
+
+.link {
+    color: seashell;
+}
+
+.menu__icon{
+    display: none;
+}
